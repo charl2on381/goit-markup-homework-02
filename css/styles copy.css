@@ -4,17 +4,6 @@
 }
 
 
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    margin: -8px;
-}
-
-
-
 body {
     position: relative;
     width: 1440px;
@@ -234,7 +223,11 @@ body {
 
 }
 
-
+.container {
+    display: flex;
+    justify-content: center;
+    margin: -8px;
+}
 
 .header-title {
 
@@ -254,11 +247,10 @@ body {
     /* or 107% */
 
     text-align: center;
-    
+    letter-spacing: 0.02em;
 
     /* WHITE */
 
-    
     color: #FFFFFF;
 }
 
@@ -283,13 +275,27 @@ body {
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-
-   /* BUTTON TEXT */
-    justify-content: center;
-    color: #FFFFFF;
-
 }
 
+.button-title {
+
+    width: 150px;
+    height: 24px;
+    align-self: center;
+    justify-content: center;
+
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+
+    /* WHITE */
+
+    color: #FFFFFF;
+
+
+
+}
 
 .section {
 
