@@ -14,6 +14,15 @@
     margin: -8px;
 }
 
+.container > .section {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: -8px;
+}
+
 
 
 body {
@@ -175,6 +184,8 @@ body {
 }
 
 
+
+
 .email {
     position: absolute;
     width: 153px;
@@ -291,6 +302,155 @@ body {
 
 }
 
+
+/*** Portfolio ***/
+
+.portfolio-menu {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 586px;
+    height: 48px;
+    left: 427px;
+    top: 168px;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+
+  
+    justify-content: center;
+    color: #FFFFFF;
+
+
+
+}
+
+.portfolio-menu .link {
+    display: block;
+    padding: 0px;
+    border-radius: 4px;
+    text-decoration: none;
+
+
+    letter-spacing: 0.02em;
+
+    /* NAVY BLUE */
+
+    color: #2E2F42;
+}
+
+
+.button-all {
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 12px 24px;
+    
+        width: 69px;
+        height: 48px;
+    
+        /* OCEAN */
+    
+        background: #404BBF;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+
+        /* IRIS */
+        
+            
+
+
+  
+
+}
+
+.button-website {
+
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 24px;
+    
+        width: 116px;
+        height: 48px;
+    
+        /* CLOUD */
+    
+        background: #F4F4FD;
+        /* CORNFLOWER */
+    
+        border: 1px solid #E7E9FC;
+        border-radius: 4px;
+
+        color: #4D5AE5;
+}
+
+
+.button-app {
+
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 24px;
+    
+        width: 78px;
+        height: 48px;
+    
+        /* CLOUD */
+    
+        background: #F4F4FD;
+        /* CORNFLOWER */
+    
+        border: 1px solid #E7E9FC;
+        border-radius: 4px;
+}
+
+.button-design {
+
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 24px;
+    
+        width: 101px;
+        height: 48px;
+    
+        /* CLOUD */
+    
+        background: #F4F4FD;
+        /* CORNFLOWER */
+    
+        border: 1px solid #E7E9FC;
+        border-radius: 4px;
+}
+
+.button-marketing {
+
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 24px;
+    
+        width: 126px;
+        height: 48px;
+    
+        /* CLOUD */
+    
+        background: #F4F4FD;
+        /* CORNFLOWER */
+    
+        border: 1px solid #E7E9FC;
+        border-radius: 4px;
+}
 
 .section {
 
@@ -470,6 +630,26 @@ body {
     object-fit: fill;
 }
 
+.team-item:nth-child(5) img {
+    object-fit: fill;
+}
+
+.team-item:nth-child(6) img {
+    object-fit: fill;
+}
+
+.team-item:nth-child(7) img {
+    object-fit: fill;
+}
+
+.team-item:nth-child(8) img {
+    object-fit: fill;
+}
+
+.team-item:nth-child(9) img {
+    object-fit: fill;
+}
+
 .circle {
 
     position: absolute;
@@ -480,6 +660,81 @@ body {
     /* IRIS */
 
     background: #4D5AE5;
+}
+
+.portfolio-item>.portfolio-name,
+.base>.portfolio-name {
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+.portfolio-item>.portfolio-name {
+    /*  font-family: Roboto; */
+    font-weight: 700;
+    letter-spacing: -0.05em;
+
+}
+
+.portfolio-item>.portfolio-type,
+.base>.portfolio-type {
+    padding: 0px;
+    font-size: 14px;
+}
+
+.portfolio-item>.portfolio-type {
+    /*   font-family: 'Roboto'; */
+    letter-spacing: -0.05em;
+}
+
+.section-portfolio {
+
+
+  
+
+}
+
+.portfolio {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0px;
+    margin-left: 0px;
+    
+    
+}
+
+.portfolio-item {
+    margin: 20px 0 0 20px;
+    flex-basis: calc(100% / 3 - 20px);
+
+}
+
+.portfolio-item,
+.base {
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.portfolio-item:nth-child(1) img {
+    object-fit: fill;
+
+}
+
+.portfolio-item:nth-child(2) img {
+    object-fit: fill;
+}
+
+.portfolio-item:nth-child(3) img {
+    object-fit: fill;
+}
+
+.portfolio-item:nth-child(4) img {
+    object-fit: fill;
 }
 
 
