@@ -447,9 +447,9 @@ a {
 
     position: absolute;
     width: 1128px;
-    height: 104px;
+    height: 412px;
     left: 156px;
-    top: 742px;
+    top: 800px;
 
 }
 
@@ -461,8 +461,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: -20px;
-    margin-left: -20px;
+    margin-top: 0px;
+    margin-left: 0px;
 }
 
 .benefits-item {
@@ -472,24 +472,56 @@ a {
 
 
 .section2 {
+    
     position: absolute;
-    width: 1400px;
+    width: 1140px;
     height: 412px;
-    left: 10px;
-    top: 920px;
+    left: 156px;
+    top: 1050px;
 
 }
 
-.section2-title {
+.what-we-do-title {
 
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-
     color: #2E2F42;
+
 }
 
+.what-we-do {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0px;
+    margin-left: 0px;
+    
+ 
+}
 
+.what-we-do-item {
+    margin: 20px 0 0 20px;
+    flex-basis: calc(100% / 3 - 20px);
+}
+
+.what-we-do-item:nth-child(1) img {
+    object-fit: fill;
+
+}
+
+.what-we-do-item:nth-child(2) img {
+    object-fit: fill;
+}
+
+.what-we-do-item:nth-child(3) img {
+    object-fit: fill;
+}
+
+/*
 .what-we-do {
     padding: 0;
     margin: 0;
@@ -519,36 +551,11 @@ a {
     object-fit: fill;
 }
 
+*/
 
 
 
-.team_title {
-    /*  font-family: 'Roboto'; */
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    /* identical to box height, or 111% */
-
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-
-
-    color: #2E2F42;
-}
-
-.section3_container {
-
-    padding: 24px;
-    margin: 0px;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-
-}
+/*
 
 .team-item>.team-name,
 .base>.team-name {
@@ -563,6 +570,8 @@ a {
     letter-spacing: -0.05em;
 
 }
+
+
 
 .team-item>.team-position,
 .base>.team-position {
@@ -591,6 +600,113 @@ a {
     top: 1250px;
     
 }
+
+.team-item {
+    margin: 20px 0 0 20px;
+    flex-basis: calc(100% / 4 - 20px);
+
+}
+
+.team-item,
+.base {
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.team-item:nth-child(1) img {
+    object-fit: fill;
+
+}
+
+.team-item:nth-child(2) img {
+    object-fit: fill;
+}
+
+.team-item:nth-child(3) img {
+    object-fit: fill;
+}
+
+.team-item:nth-child(4) img {
+    object-fit: fill;
+}
+
+*/
+.section3 {
+
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+    position: absolute;
+    width: 1440px;
+    height: 732px;
+    left: 0px;
+    top: 1548px;
+    background-color: #F4F4FD;
+}
+
+.team-title {
+
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+    position: absolute;
+    width: 162px;
+    height: 40px;
+    left: 639px;
+    top: 72px;
+
+}
+
+.team {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0px;
+    margin-left: 0px;
+    position: absolute;
+    width: 1140px;
+    height: 412px;
+    left: 156px;
+    top: 156px;
+
+}
+
+
+
+.team-item>.team-name,
+.base>.team-name {
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+.team-item>.team-name {
+    /*  font-family: Roboto; */
+    font-weight: 700;
+    letter-spacing: -0.05em;
+
+}
+
+.team-item>.team-type,
+.base>.team-type {
+    padding: 0px;
+    font-size: 14px;
+}
+
+.team-item>.team-type {
+    /*   font-family: 'Roboto'; */
+    letter-spacing: -0.05em;
+}
+
+
+
+
 
 .team-item {
     margin: 20px 0 0 20px;
@@ -799,7 +915,7 @@ a {
     width: 1440px;
     height: 312px;
     left: 0px;
-    top: 1764px;
+    top: 2280px;
 
     /* NAVY BLUE */
 
