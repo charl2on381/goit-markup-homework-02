@@ -1,24 +1,3 @@
-:root {
-
-    --ct-body-font-family: Roboto;
-    --ct-body-font-size: 16px;
-    --ct-body-font-weight: 40;
-    --ct-body-line-height: 24px;
-    --ct-body-letter-spacing: 2%;
-    --ct-body-color: #2E2F42;
-    --ct-body-bg:#FFFFFF;
-    --ct-link-color: #0dfddd;
-    --ct-link-hover-color: #404BBF;
-    --ct-link-active-color: #4D5AE5;
-    --ct-button-bg-color: #4D5AE5;
-    --ct-button-text-hover-color: #ffffff;
-
-    --ct-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-
-
-}
 
 *,
 *::before,
@@ -27,28 +6,10 @@
 }
 
 body {
-
-    margin: 0;
-    font-family: var(--ct-body-font-family); 
-    font-size:  var(--ct-body-font-size); 
-    font-weight: var(--ct-body-font-weight);
-    line-height: var(--ct-body-line-height);
-    letter-spacing: var(--ct-body-letter-spacing);
-    color: var(--ct-body-color);
-    background-color: var(--ct-body-bg);
-
-}
-
-p {
-    color: #000000;
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-
-
-.a :link {
-    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
 }
 
 .container {
@@ -58,21 +19,6 @@ p {
     flex-direction: column;
     justify-content: center;
     margin: -8px;
-}
-
-.nav {
-  
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    background: var(--ct-body-bg);
-    border-bottom: 1px solid #E7E9FC;
-}
-
-a {
-    background-color: transparent
 }
 
 /*
@@ -90,11 +36,11 @@ a {
 
 .menu .link:hover,
 .menu .link:focus {
-    color: var(--ct-link-hover-color);
+    color: #404BBF;
 }
 
 .menu .link:active {
-    color: var(--ct-link-active-color);
+    color: #4D5AE5;
 }
 
 
@@ -129,7 +75,6 @@ a {
     top: 27px;
     text-decoration: none;
 
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -139,6 +84,10 @@ a {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+        /* NAVY BLUE */
+    
+        color: #2E2F42;
 }
 
 
@@ -199,7 +148,7 @@ link {
     font-weight: normal;
     line-height: 16px;
     letter-spacing: 4%;
-    decoration: underline;
+    text-decoration: underline;
 
 }
 
@@ -316,22 +265,22 @@ button text{
 .button {
 
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 16px 32px;
-    gap: 10px;
-
-    position: absolute;
-    width: 169px;
-    height: 56px;
-    left: 636px;
-    top: 428px;
-
-
-
-    background: var(--ct-button-bg-color);
-    box-shadow: var(--ct-box-shadow);
-    border-radius: 4px;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 16px 32px;
+        gap: 10px;
+    
+        position: absolute;
+        width: 169px;
+        height: 56px;
+        left: 636px;
+        top: 428px;
+    
+        /* IRIS */
+    
+        background: #4D5AE5;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
 
  
     justify-content: center;
@@ -342,13 +291,12 @@ button text{
 
 
 .button:hover {
-    background-color: #404bbf
+    background-color: #404bbf;
 }
 
 
 .section-title {
     text-align: center;
-    color: #000000;
 
 }
 
@@ -356,20 +304,9 @@ button text{
 /*** Portfolio ***/
 
 
-.portfolio-menu {
+.filters {
 
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-    position: absolute;
-    width: 586px;
-    height: 48px;
-    left: 427px;
-    top: 168px;
     text-decoration: none;
-    list-style: none;
     justify-content: center;
 
 
@@ -381,13 +318,13 @@ button text{
 }
 
 
-.portfolio-menu .link:hover,
-.portfolio-menu .link:focus {
-    color: var(--ct-button-text-hover-color);
+.filters .link:hover,
+.filters .link:focus {
+    color: #404BBF;
 }
 
-.portfolio-menu .link:active {
-    color: var(--ct-link-active-color);
+.filters .link:active {
+    color: #4D5AE5;
 }
 
 .portfolio-button {
@@ -406,7 +343,7 @@ button text{
 
 .portfolio-button:hover,
 .portfolio-button:focus {
-    background-color: var(--ct-link-hover-color);
+    background-color: #404BBF;
 }
 
 
@@ -784,6 +721,8 @@ button text{
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    color: #F4F4FD;
 }
 
 .footer-content {
@@ -794,5 +733,8 @@ button text{
     left: 156px;
     top: 130px;
 
-    color: white;
+    letter-spacing: 0.02em;
+    
+    /* CLOUD */
+    color: #F4F4FD;
 }
