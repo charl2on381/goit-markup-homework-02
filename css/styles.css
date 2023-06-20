@@ -187,8 +187,6 @@ a {
 
 .logo2 {
 
-    /* NAVY BLUE */
-
     color: #ffffff;
 
 }
@@ -523,7 +521,6 @@ a {
 }
 
 .team-item>.team-name {
-    /*  font-family: Roboto; */
     font-weight: 700;
     letter-spacing: -0.05em;
 
@@ -536,12 +533,8 @@ a {
 }
 
 .team-item>.team-type {
-    /*   font-family: 'Roboto'; */
     letter-spacing: -0.05em;
 }
-
-
-
 
 
 .team-item {
@@ -574,7 +567,6 @@ a {
     object-fit: fill;
 }
 
-
 .circle {
 
     position: absolute;
@@ -582,7 +574,6 @@ a {
     right: 0%;
     top: 0%;
     bottom: 0%;
-    /* IRIS */
 
     background: #4D5AE5;
 }
@@ -608,11 +599,9 @@ a {
 }
 
 .portfolio-item>.portfolio-type {
-    /*   font-family: 'Roboto'; */
+
     letter-spacing: -0.05em;
 }
-
-
 
 .portfolio {
     padding: 0;
@@ -741,10 +730,6 @@ a {
     object-fit: fill;
 }
 
-
-
-
-
 .footer {
 
     position: absolute;
@@ -781,9 +766,6 @@ a {
     left: 156px;
     top: 100px;
     text-decoration: none;
-
-
-    /*   font-family: 'Raleway'; */
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
