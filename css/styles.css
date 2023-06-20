@@ -128,7 +128,7 @@ body {
 
 .menu-right {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     padding: 0px;
     gap: 40px;
     list-style: none;
