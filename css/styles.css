@@ -165,7 +165,7 @@ a {
     top: 27px;
     text-decoration: none;
 
-    /*    font-family: 'Raleway';  */
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -514,8 +514,6 @@ a {
     top: 156px;
 
 }
-
-
 
 .team-item>.team-name,
 .base>.team-name {
