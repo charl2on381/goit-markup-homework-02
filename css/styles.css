@@ -2,13 +2,14 @@
 
     --ct-body-font-family: Roboto;
     --ct-body-font-size: 16px;
-    --ct-body-font-weight: 500;
-    --ct-body-line-height: 1.5;
+    --ct-body-font-weight: 40;
+    --ct-body-line-height: 24px;
+    --ct-body-letter-spacing: 2%;
     --ct-body-color: #2E2F42;
     --ct-body-bg:#FFFFFF;
     --ct-link-color: #0dfddd;
-    --ct-link-hover-color: #ffc800;
-    --ct-link-active-color: #ff0000;
+    --ct-link-hover-color: #404BBF;
+    --ct-link-active-color: #4D5AE5;
     --ct-button-bg-color: #4D5AE5;
     --ct-button-text-hover-color: #ffffff;
 
@@ -28,10 +29,11 @@
 body {
 
     margin: 0;
-    font-family: var(--ct-body-font-family);
-    font-size:  var(--ct-body-font-size);
+    font-family: var(--ct-body-font-family); 
+    font-size:  var(--ct-body-font-size); 
     font-weight: var(--ct-body-font-weight);
     line-height: var(--ct-body-line-height);
+    letter-spacing: var(--ct-body-letter-spacing);
     color: var(--ct-body-color);
     background-color: var(--ct-body-bg);
 
@@ -44,47 +46,6 @@ p {
 }
 
 
-h6,
-.h6,
-h5,
-.h5,
-h4,
-.h4,
-h3,
-.h3,
-h2,
-.h2,
-h1,
-.h1 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-}
-
-h1 {
-    font-size: 56px
-}
-
-h2 {
-    font-size: 30px
-}
-
-h3 {
-    font-size: 24px
-}
-
-h4 {
-    font-size: 20px
-}
-
-h5 {
-    font-size: 18px
-}
-
-h6 {
-    font-size: 16px
-}
 
 .a :link {
     text-decoration: none;
@@ -114,6 +75,7 @@ a {
     background-color: transparent
 }
 
+/*
 .menu .link {
     color: inherit;
     display: block;
@@ -123,6 +85,8 @@ a {
     letter-spacing: 0.02em;
     background-color: var(--ct-body-bg);
 }
+
+*/
 
 .menu .link:hover,
 .menu .link:focus {
@@ -228,6 +192,18 @@ a {
 
 }
 
+link {
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    letter-spacing: 4%;
+    decoration: underline;
+
+}
+
+/*
 .menu .link {
     display: block;
     padding: 0px;
@@ -238,6 +214,7 @@ a {
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
+*/
 
 
 .email {
@@ -276,19 +253,64 @@ a {
 
 }
 
-.header-title {
+h1 {
 
-    position: absolute;
-    width: 496px;
-    height: 120px;
-    left: 472px;
-    top: 180px;
-
+    font-family: inherit;
+    font-size: 56px;
+    font-weight: bold;
+    letter-spacing: 2%;
+    line-height: 60px;
+    padding: 165px 0;
     text-align: center;
     color: #FFFFFF;
   
 }
 
+
+h2 {
+
+    font-family: inherit;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2%;
+}
+
+h3 {
+
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: medium;
+    letter-spacing: 2%;
+
+}
+
+.small {
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 14px;
+    letter-spacing: 4%;
+}
+
+.medium {
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: medium;
+    line-height: 24px;
+    letter-spacing: 2%;
+}
+
+
+
+button text{
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: medium;
+    line-height: 24px;
+    letter-spacing: 4%;
+}
 
 
 .button {
@@ -305,20 +327,29 @@ a {
     left: 636px;
     top: 428px;
 
-    /* IRIS */
 
-   background: var(--ct-button-bg-color);
+
+    background: var(--ct-button-bg-color);
     box-shadow: var(--ct-box-shadow);
     border-radius: 4px;
 
-    /* BUTTON TEXT */
+ 
     justify-content: center;
     color: #FFFFFF;
 
 }
 
+
+
 .button:hover {
-    background-color: #dac400
+    background-color: #404bbf
+}
+
+
+.section-title {
+    text-align: center;
+    color: #000000;
+
 }
 
 
@@ -349,15 +380,6 @@ a {
 
 }
 
-.portfolio-menu .link {
-    color: inherit;
-    display: block;
-    padding: 0px;
-    border-radius: 4px;
-    text-decoration: none;
-    letter-spacing: 0.02em;
- 
-}
 
 .portfolio-menu .link:hover,
 .portfolio-menu .link:focus {
@@ -384,7 +406,7 @@ a {
 
 .portfolio-button:hover,
 .portfolio-button:focus {
-    background-color: rgb(0, 60, 255);
+    background-color: var(--ct-link-hover-color);
 }
 
 
@@ -482,19 +504,6 @@ a {
     background-color: #F4F4FD;
 }
 
-.team-title {
-
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2E2F42;
-    position: absolute;
-    width: 162px;
-    height: 40px;
-    left: 635px;
-    top: 72px;
-
-}
 
 .team {
     padding: 0;
