@@ -22,46 +22,96 @@ body {
     margin: -8px;
 }
 
-/*
-.menu .link {
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    list-style: none;
+    position: absolute;
+    width: 261px;
+    height: 24px;
+    left: 347px;
+    top: 12px;
+    text-decoration: none;
+
+}
+
+.menu .link,
+.menu .visited
+ {
     color: inherit;
     display: block;
     padding: 0px;
     border-radius: 4px;
     text-decoration: none;
     letter-spacing: 0.02em;
-    background-color: var(--ct-body-bg);
+    text-decoration: none;
+   
 }
-
-*/
 
 .menu .link:hover,
-.menu .link:focus {
-    color: #404BBF;
-}
-
 .menu .link:active {
-    color: #4D5AE5;
+    text-decoration: underline;
+    text-decoration-color: #404BBF;
+
 }
 
+.menu-right {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 40px;
+    list-style: none;
+    position: absolute;
+    width: 500px;
+    height: 24px;
+    left: 940px;
+    top: 12px;
+    text-decoration: none;
 
+}
+
+.menu-right .link,
+.menu-right .visited {
+    color: inherit;
+    display: block;
+    padding: 0px;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+}
+
+.menu-right .link:hover,
+.menu-right .link:active {
+    text-decoration: underline;
+    text-decoration-color: #404BBF;
+
+}
+
+/*
 .menu-right .link {
     color: inherit;
 }
 
 .menu-right .link:hover,
 .menu-right .link:active {
-    color: var(--ct-link-hover-color);
+    color: color: #404BBF;
 }
 
 .menu-right .link:active {
-    color: var(--ct-link-active-color);
+    color: color: #4D5AE5;
+
 }
+*/
 
 .logo:hover,
 .logo:focus {
     text-decoration: none;
-    color: var(--ct-link-active-color);
+    color: color: #4D5AE5;
 }
 
 .logo {
@@ -111,47 +161,18 @@ body {
     cursor: pointer;
 }
 
-.menu {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
-    list-style: none;
-    position: absolute;
-    width: 261px;
-    height: 24px;
-    left: 347px;
-    top: 12px;
-    text-decoration: none;
-
-}
-
-.menu-right {
-    display: flex;
-    flex-direction: row;
-    padding: 0px;
-    gap: 40px;
-    list-style: none;
-    position: absolute;
-    width: 500px;
-    height: 24px;
-    left: 900px;
-    top: 12px;
-    text-decoration: none;
-
-}
-
 link {
 
-    font-family: inherit;
+    font-family: 'Roboto';
     font-size: 12px;
     font-weight: normal;
     line-height: 16px;
     letter-spacing: 4%;
-    text-decoration: underline;
+    text-decoration: none;
+  
 
 }
+
 
 /*
 .menu .link {
@@ -175,7 +196,7 @@ link {
     top: 24px;
 
     letter-spacing: 0.02em;
-    text-decoration-line: underline;
+    
     color: #434455;
 }
 
@@ -293,11 +314,55 @@ button text{
 
 .button:hover {
     background-color: #404bbf;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 
 .section-title {
-    text-align: center;
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        /* identical to box height, or 111% */
+    
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+    
+        /* NAVY BLUE */
+    
+        color: #2E2F42;
+
+}
+
+.benefit-item-title {
+
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height, or 120% */
+    
+        letter-spacing: 0.02em;
+    
+        /* NAVY BLUE */
+    
+        color: #2E2F42;
+
+}
+
+.benefit-item-description {
+
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        /* or 150% */
+    
+        letter-spacing: 0.02em;
+    
+        /* SLATE */
+    
+        color: #434455;
 
 }
 
@@ -336,15 +401,22 @@ button text{
     align-items: center;
     padding: 12px 24px;
 
-    box-shadow: var(--ct-box-shadow);
-    border: 1px solid #E7E9FC;
-    border-radius: 4px;
+    
 
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus {
+    color: #FFFFFF;
     background-color: #404BBF;
+}
+
+.filters .link:active {
+    /* WHITE */
+    color: #FFFFFF;
+    background: #404BBF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 
@@ -430,16 +502,37 @@ button text{
 
 .section3 {
 
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2E2F42;
     position: absolute;
-    width: 1440px;
-    height: 732px;
-    left: 0px;
-    top: 1548px;
-    background-color: #F4F4FD;
+        width: 1440px;
+        height: 732px;
+        left: 0px;
+        top: 1548px;
+    
+        /* CLOUD */
+    
+        background: #F4F4FD;
+}
+
+.section2-title {
+        position: absolute;
+        width: 300px;
+        height: 40px;
+        left: 575px;
+        top: 10px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        /* identical to box height, or 111% */
+    
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+    
+        /* NAVY BLUE */
+    
+        color: #2E2F42;
+
 }
 
 
@@ -576,7 +669,7 @@ button text{
 .base {
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    text-align: center;
+
 }
 
 .portfolio-item:nth-child(1) img {
@@ -618,7 +711,7 @@ button text{
 .base {
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    text-align: center;
+
 }
 
 .portfolio-item-row2:nth-child(1) img {
@@ -661,7 +754,7 @@ button text{
 .base {
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    text-align: center;
+  
 }
 
 .portfolio-item-row3:nth-child(1) img {
@@ -734,8 +827,15 @@ button text{
     left: 156px;
     top: 130px;
 
-    letter-spacing: 0.02em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+        /* or 150% */
+
+     letter-spacing: 0.02em;
     
     /* CLOUD */
+    
     color: #F4F4FD;
+
 }
