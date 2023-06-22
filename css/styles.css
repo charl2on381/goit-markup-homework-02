@@ -53,8 +53,7 @@ body {
 
 .menu .link:hover,
 .menu .link:active {
-    text-decoration: underline;
-    text-decoration-color: #404BBF;
+    color: #404BBF;
 
 }
 
@@ -87,8 +86,7 @@ body {
 
 .menu-right .link:hover,
 .menu-right .link:active {
-    text-decoration: underline;
-    text-decoration-color: #404BBF;
+   color: #404BBF;
 
 }
 
@@ -111,7 +109,7 @@ body {
 .logo:hover,
 .logo:focus {
     text-decoration: none;
-    color: color: #4D5AE5;
+    color: #4D5AE5;
 }
 
 .logo {
@@ -226,7 +224,6 @@ link {
 
 h1 {
 
-    font-family: inherit;
     font-size: 56px;
     font-weight: bold;
     letter-spacing: 2%;
@@ -240,7 +237,6 @@ h1 {
 
 h2 {
 
-    font-family: inherit;
     font-size: 36px;
     font-weight: bold;
     letter-spacing: 2%;
@@ -248,10 +244,9 @@ h2 {
 
 h3 {
 
-    font-family: inherit;
     font-size: 20px;
-    font-weight: medium;
-    letter-spacing: 2%;
+    font-weight: 500;
+    letter-spacing: 0.02em;
 
 }
 
@@ -286,18 +281,20 @@ button text{
 
 .button {
 
-    display: flex;
+    /*   display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: flex-start; */
         padding: 16px 32px;
         gap: 10px;
     
         position: absolute;
-        width: 169px;
-        height: 56px;
+       /* width: 169px;
+        height: 56px; 
         left: 636px;
-        top: 428px;
-    
+        top: 428px; */
+
+        border: none;
+        cursor: pointer;
         /* IRIS */
     
         background: #4D5AE5;
@@ -305,8 +302,8 @@ button text{
         border-radius: 4px;
 
  
-    justify-content: center;
-    color: #FFFFFF;
+     /*justify-content: center; */
+        color: #FFFFFF;
 
 }
 
@@ -371,15 +368,7 @@ button text{
 
 
 .filters {
-
-    text-decoration: none;
-    justify-content: center;
-
-
-    justify-content: center;
-  
-
-
+    list-style: none;
 
 }
 
@@ -399,7 +388,12 @@ button text{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border: none ;
+    border-radius: 4px;
     padding: 12px 24px;
+    cursor: pointer;
+    background: #F4F4FD;
+
 
     
 
@@ -519,7 +513,6 @@ button text{
         height: 40px;
         left: 575px;
         top: 10px;
-        text-align: center;
         font-weight: 700;
         font-size: 36px;
         line-height: 40px;
@@ -550,6 +543,17 @@ button text{
     height: 412px;
     left: 140px;
     top: 156px;
+
+}
+
+.team-position {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #434455;
 
 }
 
@@ -821,11 +825,11 @@ button text{
 
 .footer-content {
 
-    position: absolute;
+  /*  position: absolute;
     width: 264px;
     height: 72px;
     left: 156px;
-    top: 130px;
+    top: 130px; */
 
     font-weight: 400;
     font-size: 16px;
